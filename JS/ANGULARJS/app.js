@@ -6,11 +6,14 @@ var app = angular.module('app',[]).config(function($interpolateProvider){
 		restrict: 'A',
 		link: function(scope,element,attr) {
 			element.addClass('fade-hide');
+			element.addClass('fade');
 			angular.element(document).ready(function(){
 				window.setTimeout(function(){
 					element.removeClass('fade-hide');
 					element.addClass('fade-show');
-				},3000);
+					jQuery(".upper-layer").mouseover();
+					jQuery(".lower-layer").mouseover();
+				}, 1000);				
 			});
 		}
 	}
@@ -19,30 +22,13 @@ var app = angular.module('app',[]).config(function($interpolateProvider){
 		restrict: 'A',
 		link: function(scope,element,attr) {
 			element.addClass('fade-show');
+			element.addClass('fade');
 			angular.element(document).ready(function(){
-				window.setTimeout(function(){
-					element.removeClass('fade-show');
-					element.addClass('fade-hide');
-				},2000);
+				element.removeClass('fade-show');
+				element.addClass('fade-hide');
 				window.setTimeout(function(){
 					element.addClass('display-none');
-				},3000);
-			});
-		}
-	}
-}).directive('ngCheckers', function(){
-	return{
-		restrict: 'A',
-		link: function(scope,element,attr) {
-			element.addClass('fade-show');
-			angular.element(document).ready(function(){
-				window.setTimeout(function(){
-					element.removeClass('fade-show');
-					element.addClass('fade-hide');
-				},2000);
-				window.setTimeout(function(){
-					element.addClass('display-none');
-				},3000);
+				},500);
 			});
 		}
 	}

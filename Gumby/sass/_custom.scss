@@ -1,31 +1,52 @@
 // Your custom SCSS should be written here...
 
+$taylorHeight: 433px;
+$scroll_textHeight: 60px;
+$city_floatHeight: 300px;
+$city_floatWidth: 1306px;
+$downHeight: 173px;
+
 body
 {
-	background: black;
+	background: white;
 }
 
 div.main
 {
 	background: white;
-	max-width: 1306px;
+	max-width: $city_floatWidth;
 	width: auto;
 	height: 100%;
-	overflow: hidden;
-	display: block;
 	margin: 0 auto;
 }
 
 div.container
 {
+	height: auto;
+	background: white;
+}
 
+div.upper-layer
+{
+	width: $city_floatWidth;
+	height: $taylorHeight + $scroll_textHeight + $city_floatHeight/2;
+}
+div.lower-layer
+{
+	margin-top: -10px;
+	background: white;
+	width: $city_floatWidth;
+	height: $downHeight + $city_floatHeight/2;
 }
 
 img.splash
 {
-	top: 20%;
-	position: absolute;
-	margin: 0 auto;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -320px;
+	z-index: 1;
 }
 
 img.center, img.taylor, img.scroll_text, img.down, img.city_float_bottom, img.city_float_upper
@@ -39,29 +60,35 @@ img.center, img.taylor, img.scroll_text, img.down, img.city_float_bottom, img.ci
 img.taylor
 {
 	width: 880px;
-	height: 433px;
+	height: $taylorHeight;
 	background: url(../../MEDIA/IMG/sprites1.png) 0 0;
+}
+
+img.taylor
+{
+	width: 880px;
+	height: $taylorHeight;
 }
 
 img.scroll_text
 {
 	width: 715px;
-	height: 60px;
+	height: $scroll_textHeight;
 	background: url(../../MEDIA/IMG/sprites1.png) 0 -433px;
 }
 
 img.down
 {
 	width: 186px;
-	height: 173px;
+	height: $downHeight;
 	background: url(../../MEDIA/IMG/sprites1.png) 0 -493px;
 }
 
 img.city_float_bottom
 {
 	margin-bottom: 0px;
-	width: 1306px;
-	height: 150px;
+	width: $city_floatWidth;
+	height: $city_floatHeight/2;
 	background: url(../../MEDIA/IMG/city_skyline.png) 0 0;
 
 }
@@ -69,14 +96,14 @@ img.city_float_bottom
 img.city_float_upper
 {
 	margin-bottom: 0px;
-	width: 1306px;
-	height: 150px;
-	background: url(../../MEDIA/IMG/city_skyline.png) 0 -150px;
+	width: $city_floatWidth;
+	height: $city_floatHeight/2;
+	background: url(../../MEDIA/IMG/city_skyline.png) 0 -#{$city_floatHeight/2};
 }
 
 .fade {
-	-webkit-transition: opacity 1s;
-	transition: opacity 1s;
+	-webkit-transition: opacity .5s;
+	transition: opacity .5s;
 }
  
 .fade-hide
@@ -86,7 +113,6 @@ img.city_float_upper
 
 .fade-show
 {
-	display: block;
 	opacity: 1;
 }
 

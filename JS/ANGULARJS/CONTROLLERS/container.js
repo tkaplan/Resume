@@ -1,6 +1,5 @@
-var containerCtrl = function($scope)
-{
-	
-}
+var containerCtrl = function($scope) {
+
+};
 
 app.controller('containerCtrl',containerCtrl);
