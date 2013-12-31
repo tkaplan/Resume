@@ -1682,15 +1682,13 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .ie9 .radio.checked i, .ie9 .checkbox.checked i { top: 0; }
 
-body { background: white; }
+body { background: url(../../MEDIA/IMG/background_pattern.png) repeat; }
 
-div.main { background: white; max-width: 1306px; width: auto; height: 100%; margin: 0 auto; }
-
-div.container { height: auto; background: white; }
+div.main { background-color: #cccccc; max-width: 1316px; height: auto; margin: 0 auto; border-style: solid; border-left-width: 5px; border-right-width: 5px; border-color: black; }
 
 div.upper-layer { width: 1306px; height: 643px; }
 
-div.lower-layer { margin-top: -10px; background: white; width: 1306px; height: 323px; }
+div.lower-layer { margin-top: -10px; width: 1306px; height: 323px; }
 
 img.splash { position: fixed; top: 50%; left: 50%; margin-top: -200px; margin-left: -320px; z-index: 1; }
 

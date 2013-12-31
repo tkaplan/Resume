@@ -11,15 +11,25 @@
 		</center>
 
 		<!-- Main Middle Content -->
-		<div class="main" ng-controller="mainCtrl">		
-		
-			<div class="container fade-hide" ng-controller="containerCtrl" ng-ready>
+		<div class="main" ng-controller="mainCtrl">
+			<div class="container fade-hide delete" ng-ready>
 					
-					<div class="upper-layer">
+					<div id="grid-upper" class="upper-layer">
 						&nbsp;
 					</div>
-					<div class="lower-layer">
+					<div id="grid-lower" class="lower-layer">
 						&nbsp;
+					</div>
+			</div>
+			<div id="container" class="container display-none" ng-controller="containerCtrl">
+					<div class="upper-layer">
+						<img src='Portfolio/MEDIA/IMG/blank.png' class='taylor'>
+						<img src='Portfolio/MEDIA/IMG/blank.png' class='scroll_text'>
+						<img src='Portfolio/MEDIA/IMG/blank.png' class='city_float_bottom'>
+					</div>
+					<div class="lower-layer">
+						<img src='Portfolio/MEDIA/IMG/blank.png' class='city_float_upper'>
+						<img src='Portfolio/MEDIA/IMG/blank.png' class='down'>
 					</div>
 			</div>
 		</div>
@@ -32,9 +42,11 @@
 		<!-- LIB -->
 		<script src="Portfolio/JS/LIB/Transition/scripts/jquery-ui-1.8.22.custom.min.js"></script>
 		<script src="Portfolio/JS/LIB/Transition/scripts/jquery.hover-transitions-1.0.min.js"></script>
+		<script src="Portfolio/JS/LIB/MouseWheel/jquery.mousewheel.js"></script>
 
 		<!-- Import jQuery -->
-		<script src="Portfolio/JS/JQUERY/jquery.taylor.checkers-one.js"></script>
+		<script src="Portfolio/JS/JQUERY/jquery.taylor.checkers.js"></script>
+		<script src="Portfolio/JS/JQUERY/jquery.taylor.transition-website.js"></script>
 
 		<!-- Import Angular -->
 		<script src="Portfolio/JS/ANGULARJS/app.js"></script>

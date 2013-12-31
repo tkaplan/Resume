@@ -8,22 +8,26 @@ $downHeight: 173px;
 
 body
 {
-	background: white;
+	background: url(../../MEDIA/IMG/background_pattern.png) repeat;
 }
 
 div.main
 {
-	background: white;
-	max-width: $city_floatWidth;
-	width: auto;
-	height: 100%;
+	background-color: rgb(204,204,204);
+	max-width: $city_floatWidth + 10px;
+	height: auto;
 	margin: 0 auto;
+	
+	border-style: solid;
+	border-left-width: 5px;
+	border-right-width: 5px;
+	border-color: black;
+
 }
 
 div.container
 {
-	height: auto;
-	background: white;
+
 }
 
 div.upper-layer
@@ -34,7 +38,6 @@ div.upper-layer
 div.lower-layer
 {
 	margin-top: -10px;
-	background: white;
 	width: $city_floatWidth;
 	height: $downHeight + $city_floatHeight/2;
 }

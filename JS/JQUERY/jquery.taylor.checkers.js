@@ -1,4 +1,4 @@
-$(".upper-layer").hover_transitions({
+$("#grid-upper").hover_transitions({
 	innerHTML_two: "	<img src='Portfolio/MEDIA/IMG/blank.png' class='taylor'>\
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='scroll_text'>\
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='city_float_bottom'>",
@@ -8,7 +8,7 @@ $(".upper-layer").hover_transitions({
 	event_mode: "hover"
 });
 
-$(".lower-layer").hover_transitions({
+$("#grid-lower").hover_transitions({
 	innerHTML_two: "	<img src='Portfolio/MEDIA/IMG/blank.png' class='city_float_upper'>\
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='down'>",
 	background_color_two: "#CCCCCC",
