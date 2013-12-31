@@ -1,1 +1,96 @@
 // Your custom SCSS should be written here...
+
+body
+{
+	background: black;
+}
+
+div.main
+{
+	background: white;
+	max-width: 1306px;
+	width: auto;
+	height: 100%;
+	overflow: hidden;
+	display: block;
+	margin: 0 auto;
+}
+
+div.container
+{
+
+}
+
+img.splash
+{
+	top: 20%;
+	position: absolute;
+	margin: 0 auto;
+}
+
+img.center, img.taylor, img.scroll_text, img.down, img.city_float_bottom, img.city_float_upper
+{
+	display: block;
+	position: relative;
+	margin: 0 auto;	
+}
+
+
+img.taylor
+{
+	width: 880px;
+	height: 433px;
+	background: url(../../MEDIA/IMG/sprites1.png) 0 0;
+}
+
+img.scroll_text
+{
+	width: 715px;
+	height: 60px;
+	background: url(../../MEDIA/IMG/sprites1.png) 0 -433px;
+}
+
+img.down
+{
+	width: 186px;
+	height: 173px;
+	background: url(../../MEDIA/IMG/sprites1.png) 0 -493px;
+}
+
+img.city_float_bottom
+{
+	margin-bottom: 0px;
+	width: 1306px;
+	height: 150px;
+	background: url(../../MEDIA/IMG/city_skyline.png) 0 0;
+
+}
+
+img.city_float_upper
+{
+	margin-bottom: 0px;
+	width: 1306px;
+	height: 150px;
+	background: url(../../MEDIA/IMG/city_skyline.png) 0 -150px;
+}
+
+.fade {
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+ 
+.fade-hide
+{
+	opacity: 0;
+}
+
+.fade-show
+{
+	display: block;
+	opacity: 1;
+}
+
+.display-none
+{
+	display: none!important;
+}
