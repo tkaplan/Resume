@@ -24,9 +24,9 @@ var app = angular.module('app',[]).config(function($interpolateProvider){
 						// Remove our transition elements
 						jQuery('.delete').remove();
 
-						// Show our actual content
+						// Show our actual conte10
 						jQuery('#container').removeClass('display-none');
-					},5000);
+					},1000);
 				}, 1000);				
 			});
 		}

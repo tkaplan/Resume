@@ -35,9 +35,17 @@ div.upper-layer
 	width: $city_floatWidth;
 	height: $taylorHeight + $scroll_textHeight + $city_floatHeight/2;
 }
+
+div.content
+{
+	background-color: black;
+	width: $city_floatWidth;
+	height: 0px;
+	overflow: hidden;
+}
+
 div.lower-layer
 {
-	margin-top: -10px;
 	width: $city_floatWidth;
 	height: $downHeight + $city_floatHeight/2;
 }

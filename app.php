@@ -27,6 +27,28 @@
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='scroll_text'>
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='city_float_bottom'>
 					</div>
+					<div class="content">
+						<center>
+							<h1> Hey Man! </h1>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+							<p> Check me out! </p>
+						</center>
+					</div>
 					<div class="lower-layer">
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='city_float_upper'>
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='down'>

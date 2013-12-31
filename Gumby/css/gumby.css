@@ -1688,7 +1688,9 @@ div.main { background-color: #cccccc; max-width: 1316px; height: auto; margin: 0
 
 div.upper-layer { width: 1306px; height: 643px; }
 
-div.lower-layer { margin-top: -10px; width: 1306px; height: 323px; }
+div.content { background-color: black; width: 1306px; height: 0px; overflow: hidden; }
+
+div.lower-layer { width: 1306px; height: 323px; }
 
 img.splash { position: fixed; top: 50%; left: 50%; margin-top: -200px; margin-left: -320px; z-index: 1; }
 

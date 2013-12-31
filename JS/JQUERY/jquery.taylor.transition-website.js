@@ -1,12 +1,13 @@
 
 $(document).on('mousewheel',function(event){
 
-	var marginTop = parseInt($('.lower-layer').css('margin-top'));
+	var height = parseInt($('div.content').css('height'));
 
 	if(event.deltaY < 0)
-		marginTop = (marginTop + 10) + "px";
-	else if(marginTop > -10)
-		marginTop = (marginTop - 10) + "px";
+		height += 10;
+	else if(height > -10)
+		height -= 10;
 
-	$('.lower-layer').css('margin-top', marginTop);
+	height += "px";
+	$('div.content').css('height', height);
 });
