@@ -11,6 +11,12 @@ body
 	background: url(../../MEDIA/IMG/background_pattern.png) repeat;
 }
 
+nav.fixed
+{
+	left: 50%;
+	margin-left: -490px;
+}
+
 div.main
 {
 	background-color: rgb(204,204,204);

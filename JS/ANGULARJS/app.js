@@ -26,6 +26,9 @@ var app = angular.module('app',[]).config(function($interpolateProvider){
 
 						// Show our actual conte10
 						jQuery('#container').removeClass('display-none');
+						
+						// Initialize Gumby
+						Gumby.init();
 					},1000);
 				}, 1000);				
 			});

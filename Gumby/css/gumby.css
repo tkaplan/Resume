@@ -1684,6 +1684,8 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 body { background: url(../../MEDIA/IMG/background_pattern.png) repeat; }
 
+nav.fixed { left: 50%; margin-left: -490px; }
+
 div.main { background-color: #cccccc; max-width: 1316px; height: auto; margin: 0 auto; border-style: solid; border-left-width: 5px; border-right-width: 5px; border-color: black; }
 
 div.upper-layer { width: 1306px; height: 643px; }

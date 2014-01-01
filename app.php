@@ -3,6 +3,7 @@
 	<head>
 	<!-- Links -->
 	<link rel="stylesheet" type="text/css" href="Portfolio/Gumby/css/gumby.css">
+	<script src="Portfolio/Gumby/js/libs/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body ng-app="app" >
 
@@ -28,26 +29,8 @@
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='city_float_bottom'>
 					</div>
 					<div class="content">
-						<center>
-							<h1> Hey Man! </h1>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-							<p> Check me out! </p>
-						</center>
+						<div ng-include src="template.url">
+						</div>
 					</div>
 					<div class="lower-layer">
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='city_float_upper'>
@@ -60,6 +43,7 @@
 		<!-- Scripts -->
 		<script src="Portfolio/bower_components/jquery/jquery.min.js"></script>
 		<script src="Portfolio/bower_components/angular/angular.min.js"></script>
+		<script src="Portfolio/Gumby/js/libs/gumby.min.js"></script>
 		
 		<!-- LIB -->
 		<script src="Portfolio/JS/LIB/Transition/scripts/jquery-ui-1.8.22.custom.min.js"></script>
