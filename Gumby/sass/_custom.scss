@@ -1,4 +1,5 @@
 // Your custom SCSS should be written here...
+@import "../../bower_components/gumby-parallax/_parallax.scss";
 
 $taylorHeight: 433px;
 $scroll_textHeight: 60px;
@@ -8,7 +9,37 @@ $downHeight: 173px;
 
 body
 {
-	background: url(../../MEDIA/IMG/background_pattern.png) repeat;
+	background: url(../../MEDIA/IMG/splat.png) no-repeat;
+}
+
+div.section
+{
+	border-top: 10px;
+	border-style: solid;
+	border-color: black;
+	background-color: rgb(244,244,244);
+}
+
+div.first-layer
+{
+	background: url(../../MEDIA/IMG/skydiver.png) no-repeat;
+	height: 500px;
+	width: $city_floatWidth;
+	padding: 0px;
+	margin: 0px;
+}
+div.second-layer
+{
+	background: url(../../MEDIA/IMG/sky.jpg) no-repeat;
+	height: 500px;
+	width: $city_floatWidth;
+	padding: 0px;
+	margin: 0px;
+}
+
+div#content-height
+{
+	height: auto;
 }
 
 nav.fixed
@@ -19,6 +50,8 @@ nav.fixed
 
 div.main
 {
+
+	overflow: hidden;
 	background-color: rgb(204,204,204);
 	max-width: $city_floatWidth + 10px;
 	height: auto;
@@ -31,28 +64,23 @@ div.main
 
 }
 
-div.container
-{
-
-}
-
 div.upper-layer
 {
-	width: $city_floatWidth;
+	width: auto;
 	height: $taylorHeight + $scroll_textHeight + $city_floatHeight/2;
 }
 
 div.content
 {
 	background-color: black;
-	width: $city_floatWidth;
+	width: auto;
 	height: 0px;
 	overflow: hidden;
 }
 
 div.lower-layer
 {
-	width: $city_floatWidth;
+	width: auto;
 	height: $downHeight + $city_floatHeight/2;
 }
 
@@ -79,12 +107,6 @@ img.taylor
 	width: 880px;
 	height: $taylorHeight;
 	background: url(../../MEDIA/IMG/sprites1.png) 0 0;
-}
-
-img.taylor
-{
-	width: 880px;
-	height: $taylorHeight;
 }
 
 img.scroll_text

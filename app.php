@@ -44,6 +44,7 @@
 		<script src="Portfolio/bower_components/jquery/jquery.min.js"></script>
 		<script src="Portfolio/bower_components/angular/angular.min.js"></script>
 		<script src="Portfolio/Gumby/js/libs/gumby.min.js"></script>
+		<script src="Portfolio/bower_components/gumby-parallax/gumby.parallax.js"></script>
 		
 		<!-- LIB -->
 		<script src="Portfolio/JS/LIB/Transition/scripts/jquery-ui-1.8.22.custom.min.js"></script>
