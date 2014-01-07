@@ -2,9 +2,18 @@ var app = angular.module('app',[]).config(function($interpolateProvider){
 	$interpolateProvider.startSymbol('{|');
 	$interpolateProvider.endSymbol('|}');
 }).directive('ngReady', function(){
-	return{
+	return {
 		restrict: 'A',
 		link: function(scope,element,attr) {
+
+			// upper-layer width is the same as lower-layer width
+			var width = jQuery('.upper-layer').css('width');
+			jQuery('.upper-layer').css('width',width);
+			jQuery('.lower-layer').css('width',width);
+			
+			// Initialize checker patter transition
+			init_tile_transition();
+
 			element.addClass('fade-hide');
 			element.addClass('fade');
 			angular.element(document).ready(function(){
@@ -26,6 +35,9 @@ var app = angular.module('app',[]).config(function($interpolateProvider){
 
 						// Show our actual conte10
 						jQuery('#container').removeClass('display-none');
+
+						jQuery('.upper-layer').css('width','auto');
+						jQuery('.lower-layer').css('width','auto');
 						
 						// Initialize Gumby
 						Gumby.init();
@@ -35,7 +47,7 @@ var app = angular.module('app',[]).config(function($interpolateProvider){
 		}
 	}
 }).directive('ngLoading', function(){
-	return{
+	return {
 		restrict: 'A',
 		link: function(scope,element,attr) {
 			element.addClass('fade-show');

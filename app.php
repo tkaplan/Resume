@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<meta charset="utf-8">
 	<!-- Links -->
 	<link rel="stylesheet" type="text/css" href="Portfolio/Gumby/css/gumby.css">
 	<script src="Portfolio/Gumby/js/libs/modernizr-2.6.2.min.js"></script>
@@ -26,15 +27,15 @@
 					<div class="upper-layer">
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='taylor'>
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='scroll_text'>
+						<img src='Portfolio/MEDIA/IMG/point_down.png' class='center'>
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='city_float_bottom'>
 					</div>
-					<div class="content">
+					<div class="content-holder">
 						<div ng-include src="template.url">
 						</div>
 					</div>
 					<div class="lower-layer">
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='city_float_upper'>
-						<img src='Portfolio/MEDIA/IMG/blank.png' class='down'>
 					</div>
 			</div>
 		</div>
