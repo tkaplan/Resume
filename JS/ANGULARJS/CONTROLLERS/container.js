@@ -1,5 +1,6 @@
 var containerCtrl = function($scope) {
-	$scope.template = { url: 'Portfolio/HTML/content.html' };
+	$scope.templateContent = { url: 'Portfolio/HTML/content.html' };
+	$scope.templateResume = { url: 'Portfolio/HTML/resume.html' };
 
 	$scope.scrollToContent = function(input)
 	{

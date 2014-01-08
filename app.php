@@ -31,7 +31,7 @@
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='city_float_bottom'>
 					</div>
 					<div class="content-holder">
-						<div ng-include src="template.url">
+						<div ng-include src="templateContent.url">
 						</div>
 					</div>
 					<div class="lower-layer">
