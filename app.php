@@ -14,16 +14,21 @@
 
 		<!-- Main Middle Content -->
 		<div class="main" ng-controller="mainCtrl">
+			<div ng-controller="containerCtrl">
 			<div class="container fade-hide delete" ng-ready>
 					
 					<div id="grid-upper" class="upper-layer">
 						&nbsp;
 					</div>
+					<div class="content-holder">
+						<div ng-include src="templateContent.url">
+						</div>
+					</div>
 					<div id="grid-lower" class="lower-layer">
 						&nbsp;
 					</div>
 			</div>
-			<div id="container" class="container display-none" ng-controller="containerCtrl">
+			<div id="container" class="container display-none" >
 					<div class="upper-layer">
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='taylor'>
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='scroll_text'>
@@ -37,6 +42,7 @@
 					<div class="lower-layer">
 						<img src='Portfolio/MEDIA/IMG/blank.png' class='city_float_upper'>
 					</div>
+			</div>
 			</div>
 		</div>
 		<!-- End of Main Middle Content -->

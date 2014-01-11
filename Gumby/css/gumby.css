@@ -1706,7 +1706,7 @@ div.upper-layer { width: auto; height: 807px; }
 
 div.lower-layer { width: auto; height: 150px; }
 
-div.content-holder { background-color: black; width: auto; height: 0px; overflow: hidden; }
+div.content-holder { background-color: black; width: auto; height: 2344px; overflow: hidden; }
 
 img.splash { position: fixed; top: 50%; left: 50%; margin-top: -200px; margin-left: -320px; z-index: 1; }
 
