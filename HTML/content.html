@@ -7,19 +7,19 @@
 		<br />
 		<span class="form-items">Name &nbsp;</span>
 		<br />
-		<input id="name" type="text" class="form-items input" placeholder="name"></input>
+		<input id="name" type="text" class="form-items input" placeholder="name" ng-model="mail.from"></input>
 		<br/>
 		<span class="form-items">Email  &nbsp; &nbsp;</span>
 		<br />
-		<input id="email" class="form-items input" type="email" placeholder="email"></form>
+		<input id="email" class="form-items input" type="email" placeholder="email" ng-model="mail.email"></form>
 		<br/>
 		<span class="form-items">Message</span>
 		<br />
-		<textarea id="message" class="form-items input" rows="4" cols="50" placeholder="message"></textarea>
+		<textarea id="message" class="form-items input" rows="4" cols="50" placeholder="message" ng-model="mail.message"></textarea>
 		<br />
 		<br />
 		<br />
-		<button style="clear:both;float:left;"> Submit </button>
+		<button style="clear:both;float:left;" ng-click="mail()"> Submit </button>
 		<br/>
 		<br/>
 		<p> This contact me feature does not work, I just recently published this web page and will soonly get it to work. You can contact me at:
